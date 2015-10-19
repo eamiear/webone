@@ -1,0 +1,65 @@
+<!-- 发布资讯Modal -->
+	<div class="modal fade" id="publishInfo">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">发布资讯</h4>
+	      </div>
+	      <div class="modal-body l-container-80">
+	        <form class="form-horizontal">
+	          <div class="form-group">
+	              <label for="title" class="col-sm-2 control-label">资讯标题：</label>
+	              <div class="col-sm-10">
+	              	 <input class="form-control title" placeholder="标题"  name="title" id="title" value="">
+	              </div>
+	          </div>
+	          <div class="form-group">
+	            <label class="col-sm-2 control-label">资讯图片：</label>
+	            <div class="col-sm-10">
+	            	<div class="thumbnail ">
+					    <img src="${pageContext.request.contextPath}/resources/images/home/c2.jpg" alt="...">
+					</div>
+					<div class="">
+						<button type="button" class="btn btn-default">上传</button>
+					</div>
+	            </div>
+	          </div>
+	          <div class="form-group">
+		          <div class="radio">
+				     <span class="col-sm-2 control-label">点击事件：</span>
+				     <div class="col-sm-10">
+				     	<label class="radio-inline">
+							<input type="radio" name="state"  value="0" checked >无
+						 </label>
+					     <label class="radio-inline">
+							 <input type="radio" name="state"  value="1"> 内部链接
+						 </label>
+					     <label class="radio-inline">
+							 <input type="radio" name="state"  value="2" > 外部链接
+					     </label>
+				     </div>
+				  </div>
+			  </div>
+			  <div class="form-group">
+			      <label for="links" class="col-sm-2 control-label">链&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接：</label>
+			      <div class="col-sm-10">
+			      	<select id="links" name="links" class="form-control">
+					  <option value="1">城市声音</option>
+				      <option value="2">政务服务</option>
+					  <option value="3">智慧旅游</option>
+					  <option value="1">智慧城管</option>
+			        </select>
+			      </div>
+			  </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer l-container-80">
+	      	 <div class="form-group">
+	      	 	<button type="button" class="btn l-w120 mg-l-30">仅保存</button>
+	        	<button type="button" class="btn l-w120 mg-l-20">保存发布</button>
+	      	 </div>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->

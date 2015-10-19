@@ -1,0 +1,26 @@
+package com.webone.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+/**
+ * 前端控制器
+ * @author skz
+ * @date 2015年9月14日
+ * @time 下午4:14:41
+ */
+@RestController
+@RequestMapping("frontend")
+public class FrontendCotroller {
+
+	@RequestMapping("/index.html")
+	public ModelAndView backendIndex(){
+		return new ModelAndView("frontend/index");
+	}
+	
+	@RequestMapping("/plugin.html")
+	public ModelAndView plugin(){
+		return new ModelAndView("frontend/plugins/plugin");
+	}
+}

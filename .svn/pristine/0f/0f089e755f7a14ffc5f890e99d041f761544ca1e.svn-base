@@ -1,0 +1,7 @@
+#database connection
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
+jdbc.driverClassName=com.mysql.jdbc.Driver
+#
+jdbc.url=jdbc:mysql://localhost:3306/webone?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+jdbc.username=root
+jdbc.password=

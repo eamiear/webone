@@ -1,0 +1,19 @@
+<table id="bootstrapTable" data-url="../wbookmsg/get_book_list"
+	data-toggle="table" data-side-pagination="server"
+	data-pagination="true" data-page-list="[10,20,30,40,50]"
+	style="padding: 5px;" data-toolbar="#custom-toolbar" data-height="300">
+	<thead>
+		<tr>
+			<th data-field="" data-checkbox="true"></th>
+			<th data-formatter="NumberFormater">编号</th>
+			<th data-field="id" data-visible="false">ID</th>
+			<th data-field="name">书名</th>
+			<th data-field="publisher">出版社</th>
+			<th data-field="publishTime" data-formatter="dateFormatter">出版时间</th>
+			<th data-field="introduce" data-formatter="contentFormater">图书简介</th>
+			<th data-field="bookType">图书类型</th>
+			<th data-field="count">页码数</th>
+			<th data-formatter="optFormater" data-events="optEvents">操作</th>
+		</tr>
+	</thead>
+</table>

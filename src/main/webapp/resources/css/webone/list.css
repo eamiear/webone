@@ -1,0 +1,13 @@
+.info-list > li:not(.hr):nth-child(odd) {
+	background-color: #F0F4F9;
+}
+.info-list > li:not(.hr):nth-child(even) {
+	background-color: #FFF;
+	border: 1px solid #E9E9E9;
+}
+.info-list > li:not(.hr) {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 16px 12px;
+	line-height: 22px;
+}

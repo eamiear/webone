@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!-- 头部导航栏 -->
+<div class="gnavbar">
+	<a class="navbar-logo" href="#">
+		<i class="fa fa-leaf"></i> <span>Web示例总结</span>
+	</a>
+	<!-- 一级菜单   -->
+	<ul class="navbar-menu left">
+		<li class="menu-item active"><a href="../home/index.html" class="link">Backend</a></li>
+		<li class="menu-item"><a href="../frontend/index.html" class="link">Frontend</a></li>
+		<li class="menu-item" secondMenu="third-menu"><a href="#"
+			class="link">Others <i class="fa fa-caret-down"> </i></a></li>
+	</ul>
+	<span class="setting-info" secondMenu="user-info"> <i
+		class="fa fa-user header-icon"></i> <span>管理员</span> <i
+		class="fa fa-caret-down drop-down-icon"></i>
+	</span>
+	<!-- 二级菜单  for用来指定属于哪个菜单的下拉框  -->
+	<ul class="gen-dropdown" for="third-menu">
+		<li><a href="#"><i class="fa fa-book"></i>子菜单一</a></li>
+		<li><a href="#"><i class="fa fa-rocket"></i>子菜单二</a></li>
+		<li><a href="#"><i class="fa fa-hand-o-right"></i>子菜单三</a></li>
+		<li class="divider"></li>
+		<li><a href="#"><i class="fa fa-smile-o"></i>子菜单四</a></li>
+	</ul>
+	<ul class="gen-dropdown" for="user-info">
+		<li><a href="#"><i class="fa fa-book"></i>我的信息</a></li>
+		<li><a href="#"><i class="fa fa-key"></i>设置密码</a></li>
+		<li><a href="#"><i class="fa fa-wrench"></i>更改主题</a></li>
+		<li class="divider"></li>
+		<li><a href="#"><i class="fa fa-power-off"></i>退出系统</a></li>
+	</ul>
+</div>

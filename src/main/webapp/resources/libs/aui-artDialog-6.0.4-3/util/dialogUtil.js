@@ -1,0 +1,109 @@
+
+var icon_base_path = "/gosunyun/resources/plugin/aui-artDialog-6.0.4-3/" ;
+
+/**
+ * 操作成功提示
+ * 
+ * @param content
+ *            提示内容，默认是"操作成功"
+ * @param sleep
+ *            多少秒关闭,默认是2秒
+ */
+function successBox(content, sleep) {
+	var d = dialog(
+			{
+				content : "<img src = "
+						+ icon_base_path + "icons/succeed.png>"
+						+ (content == null ? "操作成功^_^" : content)
+			}).showModal();
+
+	setTimeout(function() {
+		d.close().remove();
+	}, sleep == null ? 1000 : sleep);
+}
+
+/**
+ * 成功之后调用固定函数
+ * @param content
+ * @param func
+ */
+function success(content,func){
+	var dialog = dialog({
+		content:" "+(!!content ? content : "操作成功")
+	}).showModal();
+	
+	setTimeout(function(){
+		dialog.close().remove();
+		func();
+	},1000);
+}
+
+/**
+ * 操作失败提示
+ * 
+ * @param content
+ *            提示内容，默认是"操作失败"
+ * @param sleep
+ *            多少秒关闭,默认是2秒
+ */
+function errorBox(content, sleep) {
+
+	var d = dialog(
+			{
+				content : "<img src = "
+						+ icon_base_path +  "icons/error.png>"
+						+ (content == null ? "操作失败-_-!" : content)
+			}).showModal();
+
+	setTimeout(function() {
+		d.close().remove();
+	}, sleep == null ? 1000 : sleep);
+}
+
+/**
+ * 操作提示
+ * 
+ * @param content
+ *            提示内容 默认"不允许此操作"
+ * @param sleep
+ *            多少秒关闭 默认2秒
+ */
+function warningBox(content, sleep) {
+
+	var d = dialog(
+			{
+				content : "<img src = "
+						+ icon_base_path + "icons/warning.png>"
+						+ (content == null ? "不允许此操作!" : content)
+			}).showModal();
+
+	setTimeout(function() {
+		d.close().remove();
+	}, sleep == null ? 1000 : sleep);
+}
+
+/**
+ * 确定box
+ * 
+ * @param content
+ *            确定内容
+ * @param fun
+ *            确定所调用的函数
+ */
+function confirmBox(content, confirmFun,cancelFun) {
+	dialog(
+			{
+				title : "确认",
+				content : "<img src = "
+						+ icon_base_path + "icons/question.png>  "
+						+ content,
+				button : [ {
+					value : '确定',
+					autofocus : true,
+					callback : confirmFun
+				}, {
+					value : '取消',
+					callback : cancelFun
+				} ]
+			}).showModal();
+}

@@ -1,0 +1,77 @@
+body {
+  overflow-x: hidden;
+}
+
+.tool_margin_bottom_0 {
+  margin-bottom: 0;
+}
+
+.tool_border_radius_0 {
+  border-radius: 0;
+}
+
+.tool_border_radius_child_0:last-child {
+  border-radius: 0;
+}
+
+.tool_border_style {
+  border-color: #ccc;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.tool_border_bottom_style {
+  border-color: #ccc;
+  border-image: none;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+}
+
+.tool_head_img {
+  border: 2px solid #fff;
+  border-radius: 100%;
+  margin: -4px 8px 0 0;
+  max-width: 40px !important;
+}
+
+.page-header {
+  margin: 10px 0;
+}
+
+.highlight {
+  position: relative;
+}
+
+.highlight pre {
+  padding: 0;
+}
+
+.highlight code {
+  padding: 20px;
+}
+
+.btn_copy {
+  background-color: #fff;
+  /*border: 1px solid #ccc;*/
+  border-radius: 0 4px;
+  color: #777;
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  padding: 5px 8px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.del {
+  text-decoration: line-through !important;
+  color: #ccc;
+}
+
+.del:hover {
+  text-decoration: line-through !important;
+  color: #ccc;
+}
