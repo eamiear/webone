@@ -1,7 +1,9 @@
 package com.webone.controller;
 
+import org.apache.log4j.Logger;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -10,10 +12,11 @@ import org.springframework.web.servlet.ModelAndView;
  * @date 2015年9月14日
  * @time 下午4:14:41
  */
-@RestController
+@Controller
 @RequestMapping("/webapp")
 public class WebappCotroller {
 
+	private static final Logger logger = Logger.getLogger(WebappCotroller.class);
 	/**
 	 * webapp首页
 	 * @return
@@ -23,4 +26,12 @@ public class WebappCotroller {
 		return new ModelAndView("webapp/index");
 	}
 	
+	/**
+	 * easypie图表
+	 * @return
+	 */
+	@RequestMapping("/easy-pie-chart.html")
+	public String easyPieChart(){
+		return "webapp/mobile/web/easy-pie";
+	}
 }

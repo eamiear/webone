@@ -1,7 +1,7 @@
 package com.webone.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
  * @date 2015年9月14日
  * @time 下午4:14:41
  */
-@RestController
+@Controller
 @RequestMapping("backend")
 public class BackendCotroller {
 
@@ -35,7 +35,16 @@ public class BackendCotroller {
 	
 	@RequestMapping("/upload.html")
 	public ModelAndView upload(){
-		return new ModelAndView("backend/upload");
+		return new ModelAndView("backend/backup/upload");
+	}
+	
+	/**
+	 * jQueryUpload上传
+	 * @return
+	 */
+	@RequestMapping("/jquery-upload.html")
+	public String jqueryUpload(){
+		return "backend/form/upload/jquery-upload";
 	}
 	
 }

@@ -193,12 +193,15 @@
                             </ul>
                         </li>
                         <li class="list-group-item">
-                            <a href="javascript:;" class="">文件上传
+                            <a class="">文件上传
                              <span class="glyphicon glyphicon-chevron-down pull-right"></span>
                             </a>
                             <ul class="list-group">
                             	<li class="list-group-item">
                             		<a href="../backend/base-upload.html" data-ajax="true">基本文件上传</a>
+                            	</li>
+                            	<li class="list-group-item">
+                            		<a href="../backend/jquery-upload.html" data-ajax="true">jqUpload文件上传</a>
                             	</li>
                             </ul>
                         </li>

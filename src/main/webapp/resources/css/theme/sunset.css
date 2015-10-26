@@ -1,4 +1,4 @@
-pre ,textarea.unexplain{
+pre ,textarea.unexplain,p.unexplain{
     background-color: #000;
     word-wrap: break-word;
     margin: 0px;
@@ -103,6 +103,10 @@ textarea.unexplain {
 	padding-top:50px;
 }
 
+.white-bold{
+	color:#fff;
+	font: 700 16px 'consola' ;
+}
 
 @media (min-width: 992px){
 	.modal-lg {

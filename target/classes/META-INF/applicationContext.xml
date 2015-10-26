@@ -28,8 +28,18 @@
 	<context:annotation-config />
 
 	<!-- 读取资源文件 -->
+	<!-- 通过@Value注解读取资源文件，在Controller中使用 -->
+	<bean id="propertiesReader" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+	   <property name="locations">
+	     <list>
+	        <value>classpath:application.properties</value>
+	     </list>
+	   </property>
+	</bean>
+	
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="location" value="classpath:application.properties"></property>
+		<!-- <property name="location" value="classpath:application.properties"></property> -->
+		<property name="properties" ref="propertiesReader"/>
 	</bean>
 
 	<!-- 数据源配置 -->

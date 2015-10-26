@@ -1,0 +1,247 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  font: 18px / 1.4 'Microsoft YaHei','Helvetica', 'Arial', sans-serif;
+  overflow-x:hidden;
+}
+#section_container {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background: #64A4E1;
+  background-image: -webkit-linear-gradient(top left, #64A4E1, #2CCD8A);
+  background-image: -moz-linear-gradient(top left, #64A4E1, #2CCD8A);
+  background-image: -o-linear-gradient(top left, #64A4E1, #2CCD8A);
+  background-image: linear-gradient(to bottom right, #64A4E1, #2CCD8A);
+}
+
+section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 4;
+  overflow: hidden;
+  display: none;
+}
+
+section.active {
+  z-index: 6;
+  display: block;
+}
+
+article {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  visibility: hidden;
+  display: none;
+  overflow: hidden;
+  z-index: 0;
+  background-color: #fff;
+}
+
+article.active {
+  visibility: visible;
+  display: block;
+  z-index: 1;
+  overflow-y: scroll;
+}
+.ui-layout-center{
+   /*  width: 98%; */
+    margin: 5px auto;
+ }
+.ui-layout-center .panel{
+	font-size:14px;
+}
+.search .form-control{
+	border:1px solid #eee;
+}
+.page_content{
+  width: 87%;
+  margin: 0 auto;
+  
+  color: #777;
+  font-size: 14px;
+  
+}
+.page_content form{
+   margin-top: 10px;
+}
+.page_content #taskdealForm,
+.page_content #formupload{
+	margin-top:10px;
+}
+.page_content form:after{
+	display: block;
+    content: " ";
+    height: 1px;
+    border-bottom: 1px solid #eee;
+    margin-left: -11%;
+    margin-right: -11%;
+    padding-bottom: 6px;
+}
+#formupload:after,
+form.taskdealForm:after{
+	border-bottom: none;
+}
+.form{
+  
+}
+
+ .form-horizontal .form-group,
+ .row {
+    /* margin-right: 0;
+    margin-left: 0; */
+}
+ label,.form-group {
+    margin-bottom: 0;
+}
+#formupload label,
+#taskdealForm label{
+	margin-bottom:5px;
+}
+.form-group{
+	margin-bottom:6px;
+}
+.control-label{
+	font-size: 11px;
+    color: #555;
+}
+.form-control{
+	height:auto;
+}
+
+input.form-control,
+textarea.form-control,
+.txt{
+	font-size: 10px;
+    color: #999;
+    letter-spacing: .5px;
+    /* padding:0; */
+   /*  text-indent:13px; */
+    border:1px solid transparent;
+   /*  border-bottom:1px solid #eee; */
+    box-shadow: none;
+}
+
+textarea.txt{
+	width:100%;
+	border:1px solid #eee;
+	min-height: 60px;
+	margin-top:5px;
+	color:#333;
+}
+textarea:focus,
+.form-control:focus{
+	border:1px solid #eee;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow:none;
+	box-image:none;
+}
+
+div.txt{
+	/* padding-top: 7px; */
+}
+input[type=file] {
+    display: inline-block;
+    width: 74px;
+    margin-left: 16px;
+    /* position: absolute;
+    left: 110px;
+    bottom: 0; */
+}
+
+.file {
+    position: relative;
+    display: inline-block;
+
+    color: #bbb;
+    font-size: 10px;
+    text-decoration: none;
+    text-indent: 0;
+    text-align:center;
+    
+    width:100px; 
+    height:60px;
+   	padding: 4px 12px;
+    line-height: 54px;
+    overflow: hidden;
+}
+.file input {
+    position: absolute;
+    /* font-size: 100px; */
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    opacity: 0;
+}
+.file img{
+	width: 100%;
+    height: 100%;
+    
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    
+}
+.file:hover {
+    text-decoration: none;
+}
+
+.upload-btn{
+	background-color: #F5F5F5;
+    margin: 18px 15px 0 15px;
+    padding: 4px 0;
+    text-align: center;
+    border-radius: 3px;
+}
+.upload-btn .btn{
+	padding: 2px 40px;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+	background:#FFF;
+}
+
+.page-content .full-btn,
+.form .full-btn,
+form .full-btn,
+.full-btn{
+  display:block;
+  width:100%;
+  margin: 30px auto 0 auto;
+  border-radius:1px;
+}
+
+.nb-line{
+	border:1px solid transparent;
+}
+
+@media (min-width:768px){
+	div.txt{
+	 padding-top: 7px; 
+	}
+	input.form-control,
+	textarea.form-control,
+	.txt{
+	    padding:0 12px;
+	    text-indent:0;
+	}
+}

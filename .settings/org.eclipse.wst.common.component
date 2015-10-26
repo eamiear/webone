@@ -11,6 +11,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java/base"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java/frontend"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java/webapp"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java/test"/>
         <property name="context-root" value="webone"/>
         <property name="java-output-path" value="/webone/target/classes"/>
     </wb-module>

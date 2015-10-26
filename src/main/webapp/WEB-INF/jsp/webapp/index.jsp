@@ -153,6 +153,9 @@
                         <li class="list-group-item">
                             <a href="javascript:;" class="del">500</a>
                         </li>
+                        <li class="list-group-item">
+                            <a href="../webapp/easy-pie-chart.html" target="_blank" class="">手机统计页面(easyChart)</a>
+                        </li>
                     </ul>
                 </li>
             </ul><!--menu-->
